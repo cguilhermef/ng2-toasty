@@ -7,12 +7,12 @@
     "test-watch": "tsc && karma start --no-single-run --auto-watch",
     "commit": "npm run prepublish && npm test && git-cz",
     "prepublish": "ngc && npm run build",
-    "build": "webpack && cp *.scss bundles && cp -rf img bundles/img",
+    "build": "webpack && cp *.scss bundles",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akserg/ng2-toasty.git"
+    "url": "https://github.com/cguilhermef/ng2-toasty"
   },
   "keywords": [
     "angular",
@@ -23,12 +23,12 @@
   "author": "Sergey Akopkokhyants",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/akserg/ng2-toasty/issues"
+    "url": "https://github.com/cguilhermef/ng2-toasty/issues"
   },
   "main": "bundles/index.umd.js",
   "module": "index.js",
   "typings": "index.d.ts",
-  "homepage": "https://github.com/akserg/ng2-toasty",
+  "homepage": "https://github.com/cguilhermef/ng2-toasty",
   "peerDependencies": {
     "@angular/core": "^2.4.7 || ^4.0.0"
   },
