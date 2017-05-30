@@ -13,8 +13,8 @@ import { ToastyService, ToastData, ToastyConfig, ToastyEvent, ToastyEventType } 
 @Component({
   selector: 'ng2-toasty',
   template: `
-    <div id="toasty" [ngClass]="[position]">
-        <ng2-toast *ngFor="let toast of toasts" [toast]="toast" (closeToast)="closeToast(toast)"></ng2-toast>
+    <div id="toasty" class="toasty" [ngClass]="[position]">
+        <ng2-toast class="toasty__item" *ngFor="let toast of toasts" [toast]="toast" (closeToast)="closeToast(toast)"></ng2-toast>
     </div>`
 })
 export class ToastyComponent implements OnInit {
@@ -48,7 +48,7 @@ export class ToastyComponent implements OnInit {
     } else {
       value = this.config.position;
     }
-    this._position = 'toasty-position-' + value;
+    this._position = 'toasty--position-' + value;
   }
 
   get position(): string {

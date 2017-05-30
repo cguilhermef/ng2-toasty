@@ -190,8 +190,8 @@ export class ToastyService {
       title    : toastyOptions.title,
       msg      : toastyOptions.msg,
       showClose: showClose,
-      type     : 'toasty-type-' + type,
-      theme    : 'toasty-theme-' + theme,
+      type     : 'toasty--type-' + type,
+      theme    : 'toasty--theme-' + theme,
       onAdd    : toastyOptions.onAdd && isFunction(toastyOptions.onAdd) ? toastyOptions.onAdd : null,
       onRemove : toastyOptions.onRemove && isFunction(toastyOptions.onRemove) ? toastyOptions.onRemove : null
     };
