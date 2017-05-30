@@ -16,7 +16,6 @@ npm-debug.log
 !make.js
 coverage
 *.metadata.json
-bundles
 .vscode
 
 #################
