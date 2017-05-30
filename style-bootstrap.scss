@@ -53,19 +53,19 @@
     top: 12px;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
   }
   &--position-bottom-center {
     bottom: 12px;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
   }
   &--position-center-center {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, 0%);
-            transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
   }
   &__content {
     background-size: 24px 24px;
@@ -83,7 +83,7 @@
   }
   &__text {
     display: table-cell;
-    padding: 5px 20px 5px;
+    padding: 5px 30px 5px;
     text-align: center;
     vertical-align: middle;
     & a:hover,
@@ -101,6 +101,15 @@
  ***************/
 .toasty--theme-bootstrap {
   font-size: 14px;
+  border-radius: 6px;
+  box-shadow: none;
+  font-size: 14px;
+  max-width: 500px;
+  opacity: 1;
+  right: 10px;
+  top: 72px;
+  transition: transform .5s;
+  .toasty__close { color: #fff; }
   .toasty__close:after {
     content: '\e906';
     font-family: 'icomoon';
